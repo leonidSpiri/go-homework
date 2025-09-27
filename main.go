@@ -113,7 +113,7 @@ func pollOnce(client *http.Client, url string) error {
 				freeBps = 0
 			}
 			// свободная полоса в мегабитах/сек (SI): Bps * 8 / 1_000_000
-			freeMbit := float64(freeBps) * 8.0 / 1_000_000.0
+			freeMbit := float64(freeBps) / 1_000_000.0
 			fmt.Printf("Network bandwidth usage high: %s Mbit/s available\n", fmtFloat(freeMbit))
 		}
 	}

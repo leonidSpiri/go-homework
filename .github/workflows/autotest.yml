@@ -1,4 +1,4 @@
-name: autotests
+go mod initname: autotests
 
 on:
   pull_request:

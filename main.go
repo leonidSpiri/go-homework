@@ -22,8 +22,6 @@ const (
 	networkUsageLimit = 0.90
 )
 
-// ==================================
-
 func main() {
 	client := &http.Client{Timeout: httpTimeout}
 	errStreak := 0
